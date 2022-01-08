@@ -13,7 +13,7 @@ int y[4] = { -1, 1, 0, 0 };
 int main(void) {
 	// 동굴의 검은 루비를 -1, 답 matrix를 최대값 INF로 초기화.
 	int case_number = 1;
-	while (case_number++) {
+	while (1) {
 		int n = 0;
 		cin >> n;
 		if (n == 0) break;
@@ -46,6 +46,7 @@ int main(void) {
 				}
 			}
 			cout << "Problem " << case_number << ": " << dist[n-1][n-1] << endl;
+			case_number++;
 		}
 	}
 	return 0;
