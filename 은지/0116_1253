@@ -1,0 +1,33 @@
+#include <iostream>
+#include<algorithm>
+using namespace std;
+//투포인터,이분탐색
+int main() {
+	int arr[2000];
+	int n, result=0, value;
+
+	cin >> n;
+	for (int i = 0; i < n; i++)
+		cin >> arr[i];
+	sort(arr, arr + n);
+	for (int i = 0; i<n; i++) {
+		value = arr[i];
+		int left = 0, right = n-1, sum;
+
+		while (left < right) {
+			sum = arr[left] + arr[right];
+			if (sum == value) {
+				if (left != i && right != i) { //index같지 않도록 설정
+					result++;
+					break;
+				}
+				else if (left == i) left++;
+				else if (right == i) right--;
+			}
+			else if (sum < value) left++;
+			else right--;
+		}
+	}
+	cout << result;
+	return 0;
+}
