@@ -8,7 +8,7 @@
 
 ## ✏️ 2주차
 *기본문제*
-- [10813 ) 숫자카드2](https://www.acmicpc.net/problem/10816)
+- [10816 ) 숫자카드2](https://www.acmicpc.net/problem/10816)
 - [12015 ) 가장 긴 증가하는 부분 수열 2](https://www.boj.kr/12015)
 - [1235 ) 학생 번호](https://www.boj.kr/1235)
 
