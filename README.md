@@ -10,7 +10,7 @@
 *기본문제*
 - [10816 ) 숫자카드2](https://www.acmicpc.net/problem/10816)
 - [12015 ) 가장 긴 증가하는 부분 수열 2](https://www.boj.kr/12015)
-- [1235 ) 학생 번호](https://www.boj.kr/1235)
+- [1253 ) 좋다](https://www.acmicpc.net/problem/1253)
 
 *추가문제*
 - [1981 ) 배열에서 이동](https://www.boj.kr/1981)
