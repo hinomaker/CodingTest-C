@@ -1,0 +1,49 @@
+/*
+센서 N개(적어도 1개 집중국), 집중국 K개, 수신가능 영역길이 합 최소 (>0)
+6/2 => 2개 집중국 6개 센서 , 
+*/
+/*
+
+#include<iostream>
+#include<algorithm>
+#include<vector>
+
+using namespace std;
+
+
+
+int main() {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL); cout.tie(NULL);
+
+	int n, k, gap, sum = 0;
+
+	cin >> n;
+	vector<int> v(n);
+//	vector<int> v;
+	vector<int> gapV;
+
+//	cin >> n >> k;
+	cin >> k;
+
+	for (int i = 0; i < n; i++)
+		cin >> v[i];
+	sort(v.begin(), v.end());
+	
+	for (int i = 1; i < n; i++) {
+		gap = v[i] - v[i - 1];
+		gapV.push_back(gap);
+	}
+
+	sort(gapV.begin(), gapV.end());
+
+	for (int i = 0; i < n - k; i++)
+		sum += gapV[i];
+
+	cout << sum;
+
+	return 0;
+
+}
+
+*/
