@@ -17,3 +17,7 @@
 - [3020 ) 개똥벌레](https://www.boj.kr/3020)
 - [2842 ) 집배원 한상덕](https://www.boj.kr/2842)
 
+## ✏️ 3주차
+- [1802 ) 종이 접기](https://www.acmicpc.net/problem/1802)
+- [2212 ) 센서](https://www.acmicpc.net/problem/2212)
+- [17420 ) 깊콘이 넘쳐흘러](https://www.acmicpc.net/problem/17420)
