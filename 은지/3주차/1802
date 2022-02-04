@@ -1,0 +1,62 @@
+/*
+1번(반시계) in : 0 / 2번(시계) out : 1 
+양쪽 서로 다른 값 나와야 함 -> %==0
+t = 테스트 횟수? / s=문자열
+*/
+
+
+#include<iostream>
+#include<algorithm>
+#include<vector>
+#include<string>
+
+
+using namespace std;
+
+int t, l, r, ans;
+char c[3005];
+
+
+
+int main() {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL); cout.tie(NULL);
+
+	cin >> t;
+
+	for (int i = 0; i < t; t++) {
+		cin >> c;
+		int len = strlen(c);
+
+		if (len % 2 == 0) 
+			cout << "NO";
+		else {
+			for (int j = 0; j < len-1; j++) {
+				ans = (c[j] - '0') - (c[len-1 - j] - '0');
+				cout << ans;
+
+
+
+					//ans =(atoi)(s.[j]- '0') + (int)s.[s.size() - j];
+
+				//	if (ans == 1) cout << "YES";
+				//	else cout << "NO";
+
+			}
+
+		
+			}
+		
+		}
+	return 0;
+	}
+
+
+
+
+
+/*
+* 	//c = s[j];
+	for (int k = 0; k < s.size() / 2; k++) {
+	//			ans = c.[j] + c.[s.size() - j];
+*/
