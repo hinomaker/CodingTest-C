@@ -1,0 +1,73 @@
+//3048
+
+#include<iostream>
+#include<vector>
+#include<algorithm>
+
+using namespace std;
+
+int n1, n2 ,t , s1, s2;
+char c ;
+vector<pair<char, int> > v;
+
+
+int main(void){
+
+	ios::sync_with_stdio(false);
+	cin.tie(0); cout.tie(0);
+	
+
+	cin >> n1 >> n2;
+	
+	for (int i = 0; i< n1; i++){
+		cin >> c ;
+		v.push_back({c,0} );
+//		s1 = v.size()
+//		v.erase(unique(v.begin(), v.end()),v.end());
+//		s2= v.size()
+//		if(s1==s2) i--;
+		
+	}
+	reverse(v.begin(), v.end());	
+		
+	for (int i = 0; i< n2; i++){
+		cin >> c ;
+		v.push_back({c,1} );
+//		s1 = v.size()
+//		v.erase(unique(v.begin(), v.end()),v.end());
+//		s2= v.size()
+//		if(s1==s2) i--;
+		
+	}
+	
+	cin >> t;
+	int time = 0;
+	while (time<t){
+		for (int i = 0; i < n1+n2-1; i++ ){ //자신 제외 비교   
+			if(v[i].second ==0 && v[i+1].second ==1) {
+				swap(v[i], v[i+1]);
+				i++;
+			}
+		}
+	time++;
+	}
+	for (int i =0; i < v.size(); i++){
+		cout <<v[i].first;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
