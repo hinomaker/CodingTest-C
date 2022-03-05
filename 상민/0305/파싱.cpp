@@ -18,6 +18,9 @@ int main(){
     curr[delim] 접근 시 에러가 나기 때문에
     이 조건을 가장 앞에 놓아 체크해야 합니다!
     */
+    /*
+    char[]과 달리 string은 끝에 널문자가 없어서 오늘 얘기한 조건으로는 해결되지 않네요 ㅠㅠ
+    */
     if(delim == curr.size() || curr[delim] == ':' || curr[delim] == ' ')
     {
       lst.push_back(curr.substr(start, delim - start));
